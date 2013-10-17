@@ -1,0 +1,33 @@
+<VirtualHost *:80>    # Описание сервера
+    ServerAdmin root@localhost
+    ServerName erp.localhost
+
+    DocumentRoot /home/sandbox/django-projects/erp/
+
+    # Логи
+    ErrorLog    /home/sandbox/django-projects/erp/logs/error_log
+    CustomLog   /home/sandbox/django-projects/erp/logs/access_log common
+
+    # wsgi-обработчик (см. ниже)
+    WSGIScriptAlias / /home/sandbox/django-projects/erp/deploy/django.wsgi
+    # Параметры запуска wsgi
+    WSGIDaemonProcess erp-site user=www-data group=www-data home=/home/sandbox/django-projects/erp/frontend/static processes=2 threads=4 maximum-requests=100 display-name=apache-erp-wsgi
+    WSGIProcessGroup erp-site
+
+    # Статические файлы django-админки
+    Alias "/static/admin/" "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/static/admin/"
+    <Location "/static/admin/">
+        SetHandler None
+    </Location>
+
+    # Статические файлы проекта
+    Alias "/static/" "/home/sandbox/django-projects/erp/frontend/static/"
+    <Location "/static/">
+        SetHandler None
+    </Location>
+
+    <Directory "/home/sandbox/django-projects/erp/">
+	Order deny,allow
+	Allow from all
+    </Directory>
+</VirtualHost>

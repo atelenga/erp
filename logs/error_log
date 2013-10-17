@@ -1,0 +1,726 @@
+[Fri Sep 13 00:32:02 2013] [error] Internal Server Error: /admin/
+[Fri Sep 13 00:32:02 2013] [error] Traceback (most recent call last):
+[Fri Sep 13 00:32:02 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 103, in get_response
+[Fri Sep 13 00:32:02 2013] [error]     resolver_match = resolver.resolve(request.path_info)
+[Fri Sep 13 00:32:02 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 319, in resolve
+[Fri Sep 13 00:32:02 2013] [error]     for pattern in self.url_patterns:
+[Fri Sep 13 00:32:02 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 347, in url_patterns
+[Fri Sep 13 00:32:02 2013] [error]     patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+[Fri Sep 13 00:32:02 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 342, in urlconf_module
+[Fri Sep 13 00:32:02 2013] [error]     self._urlconf_module = import_module(self.urlconf_name)
+[Fri Sep 13 00:32:02 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/utils/importlib.py", line 35, in import_module
+[Fri Sep 13 00:32:02 2013] [error]     __import__(name)
+[Fri Sep 13 00:32:02 2013] [error]   File "/home/sandbox/django-projects/erp/erp/urls.py", line 7, in <module>
+[Fri Sep 13 00:32:02 2013] [error]     admin.autodiscover()
+[Fri Sep 13 00:32:02 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/__init__.py", line 29, in autodiscover
+[Fri Sep 13 00:32:02 2013] [error]     import_module('%s.admin' % app)
+[Fri Sep 13 00:32:02 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/utils/importlib.py", line 35, in import_module
+[Fri Sep 13 00:32:02 2013] [error]     __import__(name)
+[Fri Sep 13 00:32:02 2013] [error]   File "/home/sandbox/django-projects/erp/backend/admin.py", line 2, in <module>
+[Fri Sep 13 00:32:02 2013] [error]     from erp.models import CodeBOM, Remains, Supplier, SupplierProduct, Order, ProcurementPlan, Configuration, ProductionPlan, Plan
+[Fri Sep 13 00:32:02 2013] [error] ImportError: No module named models
+[Sun Sep 22 13:57:43 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/erp/static, referer: http://127.0.0.1/admin/
+[Sun Sep 22 13:57:43 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/erp/static, referer: http://127.0.0.1/admin/
+[Sun Sep 22 13:57:52 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/erp/static, referer: http://127.0.0.1/
+[Sun Sep 22 13:57:52 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/erp/static, referer: http://127.0.0.1/
+[Sun Sep 22 13:57:52 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/erp/static, referer: http://127.0.0.1/
+[Sun Sep 22 13:57:52 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/erp/static, referer: http://127.0.0.1/
+[Sun Sep 22 13:57:52 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/erp/static, referer: http://127.0.0.1/
+[Sun Sep 22 13:57:52 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/erp/static, referer: http://127.0.0.1/
+[Sun Sep 22 13:57:52 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/erp/static, referer: http://127.0.0.1/
+[Sun Sep 22 13:57:52 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/erp/static, referer: http://127.0.0.1/
+[Sun Sep 22 13:57:52 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/erp/static, referer: http://127.0.0.1/
+[Sun Sep 22 13:58:06 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/erp/static, referer: http://127.0.0.1/
+[Sun Sep 22 13:58:06 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/erp/static, referer: http://127.0.0.1/
+[Sun Sep 22 13:58:06 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/erp/static, referer: http://127.0.0.1/
+[Sun Sep 22 13:58:06 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/erp/static, referer: http://127.0.0.1/
+[Sun Sep 22 13:58:06 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/erp/static, referer: http://127.0.0.1/
+[Sun Sep 22 13:58:06 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/erp/static, referer: http://127.0.0.1/
+[Sun Sep 22 13:58:07 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/erp/static, referer: http://127.0.0.1/
+[Sun Sep 22 13:58:07 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/erp/static, referer: http://127.0.0.1/
+[Sun Sep 22 13:58:07 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/erp/static, referer: http://127.0.0.1/
+[Sun Sep 22 15:59:36 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/frontend/static/admin, referer: http://erp.local/admin/
+[Sun Sep 22 15:59:36 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/frontend/static/admin, referer: http://erp.local/admin/
+[Sun Sep 22 15:59:58 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/frontend/static/admin, referer: http://127.0.0.1/admin/
+[Sun Sep 22 15:59:58 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/frontend/static/admin, referer: http://127.0.0.1/admin/
+[Sun Sep 22 16:03:38 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/frontend/static/admin, referer: http://127.0.0.1/admin/
+[Sun Sep 22 16:03:38 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/frontend/static/admin, referer: http://127.0.0.1/admin/
+[Sun Sep 22 16:04:06 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/frontend/static/admin, referer: http://127.0.0.1/admin/
+[Sun Sep 22 16:04:06 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/frontend/static/admin, referer: http://127.0.0.1/admin/
+[Sun Sep 22 16:04:57 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/frontend/static/admin, referer: http://127.0.0.1/admin/
+[Sun Sep 22 16:04:57 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/frontend/static/admin, referer: http://127.0.0.1/admin/
+[Sun Sep 22 16:05:08 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/frontend/static/admin, referer: http://erp.local/admin/
+[Sun Sep 22 16:05:08 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/frontend/static/admin, referer: http://erp.local/admin/
+[Sun Sep 22 16:07:21 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/frontend/static/admin, referer: http://erp.local/admin/
+[Sun Sep 22 16:07:21 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/frontend/static/admin, referer: http://erp.local/admin/
+[Sun Sep 22 16:07:32 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/frontend/static/admin, referer: http://erp.local/admin/frontend/supplier/
+[Sun Sep 22 16:07:32 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/frontend/static/admin, referer: http://erp.local/admin/frontend/supplier/
+[Sun Sep 22 16:07:32 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/frontend/static/admin, referer: http://erp.local/admin/frontend/supplier/
+[Sun Sep 22 16:07:32 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/frontend/static/admin, referer: http://erp.local/admin/frontend/supplier/
+[Sun Sep 22 16:07:32 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/frontend/static/admin, referer: http://erp.local/admin/frontend/supplier/
+[Sun Sep 22 16:07:32 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/frontend/static/admin, referer: http://erp.local/admin/frontend/supplier/
+[Sun Sep 22 16:07:32 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/frontend/static/admin, referer: http://erp.local/admin/frontend/supplier/
+[Sun Sep 22 16:07:32 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/frontend/static/admin, referer: http://erp.local/admin/frontend/supplier/
+[Sun Sep 22 16:07:32 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/frontend/static/admin, referer: http://erp.local/admin/frontend/supplier/
+[Sun Sep 22 16:07:32 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/frontend/static/admin, referer: http://erp.local/admin/frontend/supplier/
+[Sun Sep 22 16:07:33 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/frontend/static/admin, referer: http://erp.local/admin/frontend/supplier/
+[Sun Sep 22 16:07:33 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/frontend/static/admin, referer: http://erp.local/admin/frontend/supplier/
+[Sun Sep 22 16:07:40 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/frontend/static/admin, referer: http://erp.local/admin/frontend/supplier/
+[Sun Sep 22 16:16:15 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/frontend/static/admin, referer: http://erp.local/admin/
+[Sun Sep 22 16:16:15 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/frontend/static/admin, referer: http://erp.local/admin/
+[Sun Sep 22 16:16:15 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/frontend/static/admin, referer: http://erp.local/admin/
+[Sun Sep 22 16:16:15 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/frontend/static/admin, referer: http://erp.local/admin/
+[Sun Sep 22 16:16:40 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/frontend/static/admin, referer: http://erp.local/admin/frontend/supplier/
+[Sun Sep 22 16:16:40 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/frontend/static/admin, referer: http://erp.local/admin/frontend/supplier/
+[Sun Sep 22 16:16:40 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/frontend/static/admin, referer: http://erp.local/admin/frontend/supplier/
+[Sun Sep 22 16:16:40 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/frontend/static/admin, referer: http://erp.local/admin/frontend/supplier/
+[Sun Sep 22 16:16:40 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/frontend/static/admin, referer: http://erp.local/admin/frontend/supplier/
+[Sun Sep 22 16:16:40 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/frontend/static/admin, referer: http://erp.local/admin/frontend/supplier/
+[Sun Sep 22 16:16:40 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/frontend/static/admin, referer: http://erp.local/admin/frontend/supplier/
+[Sun Sep 22 16:16:40 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/frontend/static/admin, referer: http://erp.local/admin/frontend/supplier/
+[Sun Sep 22 16:16:40 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/frontend/static/admin, referer: http://erp.local/admin/frontend/supplier/
+[Sun Sep 22 16:16:40 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/frontend/static/admin, referer: http://erp.local/admin/frontend/supplier/
+[Sun Sep 22 16:16:40 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/frontend/static/admin, referer: http://erp.local/admin/frontend/supplier/
+[Sun Sep 22 16:16:40 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/frontend/static/admin, referer: http://erp.local/admin/frontend/supplier/
+[Sun Sep 22 16:16:47 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/frontend/static/admin, referer: http://erp.local/admin/frontend/supplier/
+[Sun Sep 22 16:16:58 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/frontend/static/admin, referer: http://erp.local/admin/frontend/supplier/
+[Sun Sep 22 16:16:58 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/frontend/static/admin, referer: http://erp.local/admin/frontend/supplier/
+[Sun Sep 22 16:16:58 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/frontend/static/admin, referer: http://erp.local/admin/frontend/supplier/
+[Sun Sep 22 16:16:58 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/frontend/static/admin, referer: http://erp.local/admin/frontend/supplier/
+[Sun Sep 22 16:16:58 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/frontend/static/admin, referer: http://erp.local/admin/frontend/supplier/
+[Sun Sep 22 16:16:58 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/frontend/static/admin, referer: http://erp.local/admin/frontend/supplier/
+[Sun Sep 22 16:16:58 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/frontend/static/admin, referer: http://erp.local/admin/frontend/supplier/
+[Sun Sep 22 16:16:59 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/frontend/static/admin, referer: http://erp.local/admin/frontend/supplier/
+[Sun Sep 22 16:16:59 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/frontend/static/admin, referer: http://erp.local/admin/frontend/supplier/
+[Sun Sep 22 16:16:59 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/frontend/static/admin, referer: http://erp.local/admin/frontend/supplier/
+[Sun Sep 22 16:16:59 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/frontend/static/admin, referer: http://erp.local/admin/frontend/supplier/
+[Sun Sep 22 16:16:59 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/frontend/static/admin, referer: http://erp.local/admin/frontend/supplier/
+[Wed Sep 25 00:00:05 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/frontend/static/admin, referer: http://erp.local/admin/
+[Wed Sep 25 00:00:05 2013] [error] [client 127.0.0.1] File does not exist: /home/sandbox/django-projects/erp/frontend/static/admin, referer: http://erp.local/admin/
+[Wed Sep 25 00:43:30 2013] [error] [client 192.168.1.44] File does not exist: /home/sandbox/django-projects/erp/frontend/static/admin, referer: http://192.168.1.36/admin/
+[Wed Sep 25 00:43:30 2013] [error] [client 192.168.1.44] File does not exist: /home/sandbox/django-projects/erp/frontend/static/admin, referer: http://192.168.1.36/admin/
+[Wed Sep 25 00:49:23 2013] [error] [client 192.168.1.44] File does not exist: /home/sandbox/django-projects/erp/frontend/static/admin, referer: http://192.168.1.36/admin/
+[Wed Sep 25 00:49:23 2013] [error] [client 192.168.1.44] File does not exist: /home/sandbox/django-projects/erp/frontend/static/admin, referer: http://192.168.1.36/admin/
+[Fri Sep 27 22:59:31 2013] [error] Internal Server Error: /
+[Fri Sep 27 22:59:31 2013] [error] Traceback (most recent call last):
+[Fri Sep 27 22:59:31 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 103, in get_response
+[Fri Sep 27 22:59:31 2013] [error]     resolver_match = resolver.resolve(request.path_info)
+[Fri Sep 27 22:59:31 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 319, in resolve
+[Fri Sep 27 22:59:31 2013] [error]     for pattern in self.url_patterns:
+[Fri Sep 27 22:59:31 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 347, in url_patterns
+[Fri Sep 27 22:59:31 2013] [error]     patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+[Fri Sep 27 22:59:31 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 342, in urlconf_module
+[Fri Sep 27 22:59:31 2013] [error]     self._urlconf_module = import_module(self.urlconf_name)
+[Fri Sep 27 22:59:31 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/utils/importlib.py", line 35, in import_module
+[Fri Sep 27 22:59:31 2013] [error]     __import__(name)
+[Fri Sep 27 22:59:31 2013] [error]   File "/home/sandbox/django-projects/erp/erp/urls.py", line 7, in <module>
+[Fri Sep 27 22:59:31 2013] [error]     from frontend import views
+[Fri Sep 27 22:59:31 2013] [error]   File "/home/sandbox/django-projects/erp/frontend/views.py", line 123
+[Fri Sep 27 22:59:31 2013] [error]     return render_to_response("lifoselect.html", { "productionplans": productionplans},
+[Fri Sep 27 22:59:31 2013] [error]          ^
+[Fri Sep 27 22:59:31 2013] [error] IndentationError: expected an indented block
+[Fri Sep 27 22:59:35 2013] [error] Internal Server Error: /favicon.ico
+[Fri Sep 27 22:59:35 2013] [error] Traceback (most recent call last):
+[Fri Sep 27 22:59:35 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 92, in get_response
+[Fri Sep 27 22:59:35 2013] [error]     response = middleware_method(request)
+[Fri Sep 27 22:59:35 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/middleware/common.py", line 69, in process_request
+[Fri Sep 27 22:59:35 2013] [error]     if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+[Fri Sep 27 22:59:35 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 551, in is_valid_path
+[Fri Sep 27 22:59:35 2013] [error]     resolve(path, urlconf)
+[Fri Sep 27 22:59:35 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 440, in resolve
+[Fri Sep 27 22:59:35 2013] [error]     return get_resolver(urlconf).resolve(path)
+[Fri Sep 27 22:59:35 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 319, in resolve
+[Fri Sep 27 22:59:35 2013] [error]     for pattern in self.url_patterns:
+[Fri Sep 27 22:59:35 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 347, in url_patterns
+[Fri Sep 27 22:59:35 2013] [error]     patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+[Fri Sep 27 22:59:35 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 342, in urlconf_module
+[Fri Sep 27 22:59:35 2013] [error]     self._urlconf_module = import_module(self.urlconf_name)
+[Fri Sep 27 22:59:35 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/utils/importlib.py", line 35, in import_module
+[Fri Sep 27 22:59:35 2013] [error]     __import__(name)
+[Fri Sep 27 22:59:35 2013] [error]   File "/home/sandbox/django-projects/erp/erp/urls.py", line 7, in <module>
+[Fri Sep 27 22:59:35 2013] [error]     from frontend import views
+[Fri Sep 27 22:59:35 2013] [error]   File "/home/sandbox/django-projects/erp/frontend/views.py", line 123
+[Fri Sep 27 22:59:35 2013] [error]     return render_to_response("lifoselect.html", { "productionplans": productionplans},
+[Fri Sep 27 22:59:35 2013] [error]          ^
+[Fri Sep 27 22:59:35 2013] [error] IndentationError: expected an indented block
+[Fri Sep 27 23:05:29 2013] [error] Internal Server Error: /
+[Fri Sep 27 23:05:29 2013] [error] Traceback (most recent call last):
+[Fri Sep 27 23:05:29 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 103, in get_response
+[Fri Sep 27 23:05:29 2013] [error]     resolver_match = resolver.resolve(request.path_info)
+[Fri Sep 27 23:05:29 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 319, in resolve
+[Fri Sep 27 23:05:29 2013] [error]     for pattern in self.url_patterns:
+[Fri Sep 27 23:05:29 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 347, in url_patterns
+[Fri Sep 27 23:05:29 2013] [error]     patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+[Fri Sep 27 23:05:29 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 342, in urlconf_module
+[Fri Sep 27 23:05:29 2013] [error]     self._urlconf_module = import_module(self.urlconf_name)
+[Fri Sep 27 23:05:29 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/utils/importlib.py", line 35, in import_module
+[Fri Sep 27 23:05:29 2013] [error]     __import__(name)
+[Fri Sep 27 23:05:29 2013] [error]   File "/home/sandbox/django-projects/erp/erp/urls.py", line 7, in <module>
+[Fri Sep 27 23:05:29 2013] [error]     from frontend import views
+[Fri Sep 27 23:05:29 2013] [error]   File "/home/sandbox/django-projects/erp/frontend/views.py", line 123
+[Fri Sep 27 23:05:29 2013] [error]     return render_to_response("lifoselect.html", { "productionplans": productionplans},
+[Fri Sep 27 23:05:29 2013] [error]          ^
+[Fri Sep 27 23:05:29 2013] [error] IndentationError: expected an indented block
+[Fri Sep 27 23:05:31 2013] [error] Internal Server Error: /favicon.ico
+[Fri Sep 27 23:05:31 2013] [error] Traceback (most recent call last):
+[Fri Sep 27 23:05:31 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 92, in get_response
+[Fri Sep 27 23:05:31 2013] [error]     response = middleware_method(request)
+[Fri Sep 27 23:05:31 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/middleware/common.py", line 69, in process_request
+[Fri Sep 27 23:05:31 2013] [error]     if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+[Fri Sep 27 23:05:31 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 551, in is_valid_path
+[Fri Sep 27 23:05:31 2013] [error]     resolve(path, urlconf)
+[Fri Sep 27 23:05:31 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 440, in resolve
+[Fri Sep 27 23:05:31 2013] [error]     return get_resolver(urlconf).resolve(path)
+[Fri Sep 27 23:05:31 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 319, in resolve
+[Fri Sep 27 23:05:31 2013] [error]     for pattern in self.url_patterns:
+[Fri Sep 27 23:05:31 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 347, in url_patterns
+[Fri Sep 27 23:05:31 2013] [error]     patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+[Fri Sep 27 23:05:31 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 342, in urlconf_module
+[Fri Sep 27 23:05:31 2013] [error]     self._urlconf_module = import_module(self.urlconf_name)
+[Fri Sep 27 23:05:31 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/utils/importlib.py", line 35, in import_module
+[Fri Sep 27 23:05:31 2013] [error]     __import__(name)
+[Fri Sep 27 23:05:31 2013] [error]   File "/home/sandbox/django-projects/erp/erp/urls.py", line 7, in <module>
+[Fri Sep 27 23:05:31 2013] [error]     from frontend import views
+[Fri Sep 27 23:05:31 2013] [error]   File "/home/sandbox/django-projects/erp/frontend/views.py", line 123
+[Fri Sep 27 23:05:31 2013] [error]     return render_to_response("lifoselect.html", { "productionplans": productionplans},
+[Fri Sep 27 23:05:31 2013] [error]          ^
+[Fri Sep 27 23:05:31 2013] [error] IndentationError: expected an indented block
+[Fri Sep 27 23:17:51 2013] [error] Internal Server Error: /lifores/1/
+[Fri Sep 27 23:17:51 2013] [error] Traceback (most recent call last):
+[Fri Sep 27 23:17:51 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 115, in get_response
+[Fri Sep 27 23:17:51 2013] [error]     response = callback(request, *callback_args, **callback_kwargs)
+[Fri Sep 27 23:17:51 2013] [error]   File "/home/sandbox/django-projects/erp/frontend/views.py", line 125, in lifores
+[Fri Sep 27 23:17:51 2013] [error]     return render_to_response("lifoselect.html", { "productionplans": productionplans},
+[Fri Sep 27 23:17:51 2013] [error] NameError: global name 'productionplans' is not defined
+[Fri Sep 27 23:20:50 2013] [error] Internal Server Error: /lifores/1/
+[Fri Sep 27 23:20:50 2013] [error] Traceback (most recent call last):
+[Fri Sep 27 23:20:50 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 115, in get_response
+[Fri Sep 27 23:20:50 2013] [error]     response = callback(request, *callback_args, **callback_kwargs)
+[Fri Sep 27 23:20:50 2013] [error]   File "/home/sandbox/django-projects/erp/frontend/views.py", line 125, in lifores
+[Fri Sep 27 23:20:50 2013] [error]     productionplans = ProductionPlan.objects.get(code=rec_id)
+[Fri Sep 27 23:20:50 2013] [error] NameError: global name 'productionplans' is not defined
+[Fri Sep 27 23:21:10 2013] [error] Internal Server Error: /lifores/1/
+[Fri Sep 27 23:21:10 2013] [error] Traceback (most recent call last):
+[Fri Sep 27 23:21:10 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 115, in get_response
+[Fri Sep 27 23:21:10 2013] [error]     response = callback(request, *callback_args, **callback_kwargs)
+[Fri Sep 27 23:21:10 2013] [error]   File "/home/sandbox/django-projects/erp/frontend/views.py", line 128, in lifores
+[Fri Sep 27 23:21:10 2013] [error]     context_instance=RequestContext(request) )
+[Fri Sep 27 23:21:10 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/shortcuts/__init__.py", line 29, in render_to_response
+[Fri Sep 27 23:21:10 2013] [error]     return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+[Fri Sep 27 23:21:10 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 177, in render_to_string
+[Fri Sep 27 23:21:10 2013] [error]     return t.render(context_instance)
+[Fri Sep 27 23:21:10 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 140, in render
+[Fri Sep 27 23:21:10 2013] [error]     return self._render(context)
+[Fri Sep 27 23:21:10 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 134, in _render
+[Fri Sep 27 23:21:10 2013] [error]     return self.nodelist.render(context)
+[Fri Sep 27 23:21:10 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 830, in render
+[Fri Sep 27 23:21:10 2013] [error]     bit = self.render_node(node, context)
+[Fri Sep 27 23:21:10 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 74, in render_node
+[Fri Sep 27 23:21:10 2013] [error]     return node.render(context)
+[Fri Sep 27 23:21:10 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/template/defaulttags.py", line 148, in render
+[Fri Sep 27 23:21:10 2013] [error]     values = list(values)
+[Fri Sep 27 23:21:10 2013] [error] TypeError: 'ProductionPlan' object is not iterable
+[Fri Sep 27 23:25:26 2013] [error] Internal Server Error: /lifores/1/
+[Fri Sep 27 23:25:26 2013] [error] Traceback (most recent call last):
+[Fri Sep 27 23:25:26 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 115, in get_response
+[Fri Sep 27 23:25:26 2013] [error]     response = callback(request, *callback_args, **callback_kwargs)
+[Fri Sep 27 23:25:26 2013] [error]   File "/home/sandbox/django-projects/erp/frontend/views.py", line 128, in lifores
+[Fri Sep 27 23:25:26 2013] [error]     context_instance=RequestContext(request) )
+[Fri Sep 27 23:25:26 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/shortcuts/__init__.py", line 29, in render_to_response
+[Fri Sep 27 23:25:26 2013] [error]     return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+[Fri Sep 27 23:25:26 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 170, in render_to_string
+[Fri Sep 27 23:25:26 2013] [error]     t = get_template(template_name)
+[Fri Sep 27 23:25:26 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 146, in get_template
+[Fri Sep 27 23:25:26 2013] [error]     template, origin = find_template(template_name)
+[Fri Sep 27 23:25:26 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 135, in find_template
+[Fri Sep 27 23:25:26 2013] [error]     source, display_name = loader(name, dirs)
+[Fri Sep 27 23:25:26 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 43, in __call__
+[Fri Sep 27 23:25:26 2013] [error]     return self.load_template(template_name, template_dirs)
+[Fri Sep 27 23:25:26 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 49, in load_template
+[Fri Sep 27 23:25:26 2013] [error]     template = get_template_from_string(source, origin, template_name)
+[Fri Sep 27 23:25:26 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 157, in get_template_from_string
+[Fri Sep 27 23:25:26 2013] [error]     return Template(source, origin, name)
+[Fri Sep 27 23:25:26 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 125, in __init__
+[Fri Sep 27 23:25:26 2013] [error]     self.nodelist = compile_string(template_string, origin)
+[Fri Sep 27 23:25:26 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 153, in compile_string
+[Fri Sep 27 23:25:26 2013] [error]     return parser.parse()
+[Fri Sep 27 23:25:26 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 272, in parse
+[Fri Sep 27 23:25:26 2013] [error]     self.invalid_block_tag(token, command, parse_until)
+[Fri Sep 27 23:25:26 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 328, in invalid_block_tag
+[Fri Sep 27 23:25:26 2013] [error]     raise self.error(token, "Invalid block tag: '%s'" % command)
+[Fri Sep 27 23:25:26 2013] [error] TemplateSyntaxError: Invalid block tag: 'endfor'
+[Sat Sep 28 00:40:56 2013] [error] Internal Server Error: /
+[Sat Sep 28 00:40:56 2013] [error] Traceback (most recent call last):
+[Sat Sep 28 00:40:56 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 103, in get_response
+[Sat Sep 28 00:40:56 2013] [error]     resolver_match = resolver.resolve(request.path_info)
+[Sat Sep 28 00:40:56 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 319, in resolve
+[Sat Sep 28 00:40:56 2013] [error]     for pattern in self.url_patterns:
+[Sat Sep 28 00:40:56 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 347, in url_patterns
+[Sat Sep 28 00:40:56 2013] [error]     patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+[Sat Sep 28 00:40:56 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 342, in urlconf_module
+[Sat Sep 28 00:40:56 2013] [error]     self._urlconf_module = import_module(self.urlconf_name)
+[Sat Sep 28 00:40:56 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/utils/importlib.py", line 35, in import_module
+[Sat Sep 28 00:40:56 2013] [error]     __import__(name)
+[Sat Sep 28 00:40:56 2013] [error]   File "/home/sandbox/django-projects/erp/erp/urls.py", line 7, in <module>
+[Sat Sep 28 00:40:56 2013] [error]     from frontend import views
+[Sat Sep 28 00:40:56 2013] [error]   File "/home/sandbox/django-projects/erp/frontend/views.py", line 15
+[Sat Sep 28 00:40:56 2013] [error]     return render_to_response(
+[Sat Sep 28 00:40:56 2013] [error]                              ^
+[Sat Sep 28 00:40:56 2013] [error] IndentationError: unindent does not match any outer indentation level
+[Sat Sep 28 00:41:19 2013] [error] Internal Server Error: /
+[Sat Sep 28 00:41:19 2013] [error] Traceback (most recent call last):
+[Sat Sep 28 00:41:19 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 103, in get_response
+[Sat Sep 28 00:41:19 2013] [error]     resolver_match = resolver.resolve(request.path_info)
+[Sat Sep 28 00:41:19 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 319, in resolve
+[Sat Sep 28 00:41:19 2013] [error]     for pattern in self.url_patterns:
+[Sat Sep 28 00:41:19 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 347, in url_patterns
+[Sat Sep 28 00:41:19 2013] [error]     patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+[Sat Sep 28 00:41:19 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 342, in urlconf_module
+[Sat Sep 28 00:41:19 2013] [error]     self._urlconf_module = import_module(self.urlconf_name)
+[Sat Sep 28 00:41:19 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/utils/importlib.py", line 35, in import_module
+[Sat Sep 28 00:41:19 2013] [error]     __import__(name)
+[Sat Sep 28 00:41:19 2013] [error]   File "/home/sandbox/django-projects/erp/erp/urls.py", line 39, in <module>
+[Sat Sep 28 00:41:19 2013] [error]     views.result, name='result'),
+[Sat Sep 28 00:41:19 2013] [error] AttributeError: 'module' object has no attribute 'result'
+[Sat Sep 28 00:41:20 2013] [error] Internal Server Error: /lifo/
+[Sat Sep 28 00:41:20 2013] [error] Traceback (most recent call last):
+[Sat Sep 28 00:41:20 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 103, in get_response
+[Sat Sep 28 00:41:20 2013] [error]     resolver_match = resolver.resolve(request.path_info)
+[Sat Sep 28 00:41:20 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 319, in resolve
+[Sat Sep 28 00:41:20 2013] [error]     for pattern in self.url_patterns:
+[Sat Sep 28 00:41:20 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 347, in url_patterns
+[Sat Sep 28 00:41:20 2013] [error]     patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+[Sat Sep 28 00:41:20 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 342, in urlconf_module
+[Sat Sep 28 00:41:20 2013] [error]     self._urlconf_module = import_module(self.urlconf_name)
+[Sat Sep 28 00:41:20 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/utils/importlib.py", line 35, in import_module
+[Sat Sep 28 00:41:20 2013] [error]     __import__(name)
+[Sat Sep 28 00:41:20 2013] [error]   File "/home/sandbox/django-projects/erp/erp/urls.py", line 39, in <module>
+[Sat Sep 28 00:41:20 2013] [error]     views.result, name='result'),
+[Sat Sep 28 00:41:20 2013] [error] AttributeError: 'module' object has no attribute 'result'
+[Sat Sep 28 00:46:35 2013] [error] Internal Server Error: /select/1/
+[Sat Sep 28 00:46:35 2013] [error] Traceback (most recent call last):
+[Sat Sep 28 00:46:35 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 115, in get_response
+[Sat Sep 28 00:46:35 2013] [error]     response = callback(request, *callback_args, **callback_kwargs)
+[Sat Sep 28 00:46:35 2013] [error]   File "/home/sandbox/django-projects/erp/frontend/views.py", line 145, in select
+[Sat Sep 28 00:46:35 2013] [error]     lifo += remain.cost
+[Sat Sep 28 00:46:35 2013] [error] UnboundLocalError: local variable 'lifo' referenced before assignment
+[Sat Sep 28 00:51:22 2013] [error] Internal Server Error: /select/1/
+[Sat Sep 28 00:51:22 2013] [error] Traceback (most recent call last):
+[Sat Sep 28 00:51:22 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 115, in get_response
+[Sat Sep 28 00:51:22 2013] [error]     response = callback(request, *callback_args, **callback_kwargs)
+[Sat Sep 28 00:51:22 2013] [error]   File "/home/sandbox/django-projects/erp/frontend/views.py", line 150, in select
+[Sat Sep 28 00:51:22 2013] [error]     fifo += remains_fifo.cost * remain_fifo.amount
+[Sat Sep 28 00:51:22 2013] [error] AttributeError: 'QuerySet' object has no attribute 'cost'
+[Sat Sep 28 00:52:05 2013] [error] Internal Server Error: /select/1/
+[Sat Sep 28 00:52:05 2013] [error] Traceback (most recent call last):
+[Sat Sep 28 00:52:05 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 115, in get_response
+[Sat Sep 28 00:52:05 2013] [error]     response = callback(request, *callback_args, **callback_kwargs)
+[Sat Sep 28 00:52:05 2013] [error]   File "/home/sandbox/django-projects/erp/frontend/views.py", line 150, in select
+[Sat Sep 28 00:52:05 2013] [error]     fifo += remain_fifo.cost * remain_fifo.amount
+[Sat Sep 28 00:52:05 2013] [error] AttributeError: 'QuerySet' object has no attribute 'cost'
+[Sat Sep 28 00:56:57 2013] [error] Internal Server Error: /select/1/
+[Sat Sep 28 00:56:57 2013] [error] Traceback (most recent call last):
+[Sat Sep 28 00:56:57 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 115, in get_response
+[Sat Sep 28 00:56:57 2013] [error]     response = callback(request, *callback_args, **callback_kwargs)
+[Sat Sep 28 00:56:57 2013] [error]   File "/home/sandbox/django-projects/erp/frontend/views.py", line 155, in select
+[Sat Sep 28 00:56:57 2013] [error]     context_instance=RequestContext(request))
+[Sat Sep 28 00:56:57 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/shortcuts/__init__.py", line 29, in render_to_response
+[Sat Sep 28 00:56:57 2013] [error]     return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+[Sat Sep 28 00:56:57 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 170, in render_to_string
+[Sat Sep 28 00:56:57 2013] [error]     t = get_template(template_name)
+[Sat Sep 28 00:56:57 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 146, in get_template
+[Sat Sep 28 00:56:57 2013] [error]     template, origin = find_template(template_name)
+[Sat Sep 28 00:56:57 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 135, in find_template
+[Sat Sep 28 00:56:57 2013] [error]     source, display_name = loader(name, dirs)
+[Sat Sep 28 00:56:57 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 43, in __call__
+[Sat Sep 28 00:56:57 2013] [error]     return self.load_template(template_name, template_dirs)
+[Sat Sep 28 00:56:57 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 49, in load_template
+[Sat Sep 28 00:56:57 2013] [error]     template = get_template_from_string(source, origin, template_name)
+[Sat Sep 28 00:56:57 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 157, in get_template_from_string
+[Sat Sep 28 00:56:57 2013] [error]     return Template(source, origin, name)
+[Sat Sep 28 00:56:57 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 125, in __init__
+[Sat Sep 28 00:56:57 2013] [error]     self.nodelist = compile_string(template_string, origin)
+[Sat Sep 28 00:56:57 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 153, in compile_string
+[Sat Sep 28 00:56:57 2013] [error]     return parser.parse()
+[Sat Sep 28 00:56:57 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 253, in parse
+[Sat Sep 28 00:56:57 2013] [error]     filter_expression = self.compile_filter(token.contents)
+[Sat Sep 28 00:56:57 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 353, in compile_filter
+[Sat Sep 28 00:56:57 2013] [error]     return FilterExpression(token, self)
+[Sat Sep 28 00:56:57 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 570, in __init__
+[Sat Sep 28 00:56:57 2013] [error]     "from '%s'" % (token[upto:], token))
+[Sat Sep 28 00:56:57 2013] [error] TemplateSyntaxError: Could not parse the remainder: ' productionplan.complectation productionplan.amount <productionplan start_date productionplan.end_date' from 'productionplan.code productionplan.complectation productionplan.amount <productionplan start_date productionplan.end_date'
+[Sun Sep 29 13:26:34 2013] [error] Internal Server Error: /
+[Sun Sep 29 13:26:34 2013] [error] Traceback (most recent call last):
+[Sun Sep 29 13:26:34 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 103, in get_response
+[Sun Sep 29 13:26:34 2013] [error]     resolver_match = resolver.resolve(request.path_info)
+[Sun Sep 29 13:26:34 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 319, in resolve
+[Sun Sep 29 13:26:34 2013] [error]     for pattern in self.url_patterns:
+[Sun Sep 29 13:26:34 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 347, in url_patterns
+[Sun Sep 29 13:26:34 2013] [error]     patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+[Sun Sep 29 13:26:34 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 342, in urlconf_module
+[Sun Sep 29 13:26:34 2013] [error]     self._urlconf_module = import_module(self.urlconf_name)
+[Sun Sep 29 13:26:34 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/utils/importlib.py", line 35, in import_module
+[Sun Sep 29 13:26:34 2013] [error]     __import__(name)
+[Sun Sep 29 13:26:34 2013] [error]   File "/home/sandbox/django-projects/erp/erp/urls.py", line 39, in <module>
+[Sun Sep 29 13:26:34 2013] [error]     views.selectorder, name='selectorder'),
+[Sun Sep 29 13:26:34 2013] [error] AttributeError: 'module' object has no attribute 'selectorder'
+[Sun Sep 29 13:26:40 2013] [error] Internal Server Error: /
+[Sun Sep 29 13:26:40 2013] [error] Traceback (most recent call last):
+[Sun Sep 29 13:26:40 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 103, in get_response
+[Sun Sep 29 13:26:40 2013] [error]     resolver_match = resolver.resolve(request.path_info)
+[Sun Sep 29 13:26:40 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 319, in resolve
+[Sun Sep 29 13:26:40 2013] [error]     for pattern in self.url_patterns:
+[Sun Sep 29 13:26:40 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 347, in url_patterns
+[Sun Sep 29 13:26:40 2013] [error]     patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+[Sun Sep 29 13:26:40 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 342, in urlconf_module
+[Sun Sep 29 13:26:40 2013] [error]     self._urlconf_module = import_module(self.urlconf_name)
+[Sun Sep 29 13:26:40 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/utils/importlib.py", line 35, in import_module
+[Sun Sep 29 13:26:40 2013] [error]     __import__(name)
+[Sun Sep 29 13:26:40 2013] [error]   File "/home/sandbox/django-projects/erp/erp/urls.py", line 39, in <module>
+[Sun Sep 29 13:26:40 2013] [error]     views.selectorder, name='selectorder'),
+[Sun Sep 29 13:26:40 2013] [error] AttributeError: 'module' object has no attribute 'selectorder'
+[Sun Sep 29 13:26:45 2013] [error] Internal Server Error: /
+[Sun Sep 29 13:26:45 2013] [error] Traceback (most recent call last):
+[Sun Sep 29 13:26:45 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 103, in get_response
+[Sun Sep 29 13:26:45 2013] [error]     resolver_match = resolver.resolve(request.path_info)
+[Sun Sep 29 13:26:45 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 319, in resolve
+[Sun Sep 29 13:26:45 2013] [error]     for pattern in self.url_patterns:
+[Sun Sep 29 13:26:45 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 347, in url_patterns
+[Sun Sep 29 13:26:45 2013] [error]     patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+[Sun Sep 29 13:26:45 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 342, in urlconf_module
+[Sun Sep 29 13:26:45 2013] [error]     self._urlconf_module = import_module(self.urlconf_name)
+[Sun Sep 29 13:26:45 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/utils/importlib.py", line 35, in import_module
+[Sun Sep 29 13:26:45 2013] [error]     __import__(name)
+[Sun Sep 29 13:26:45 2013] [error]   File "/home/sandbox/django-projects/erp/erp/urls.py", line 39, in <module>
+[Sun Sep 29 13:26:45 2013] [error]     views.selectorder, name='selectorder'),
+[Sun Sep 29 13:26:45 2013] [error] AttributeError: 'module' object has no attribute 'selectorder'
+[Sun Sep 29 13:31:40 2013] [error] Internal Server Error: /
+[Sun Sep 29 13:31:40 2013] [error] Traceback (most recent call last):
+[Sun Sep 29 13:31:40 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 103, in get_response
+[Sun Sep 29 13:31:40 2013] [error]     resolver_match = resolver.resolve(request.path_info)
+[Sun Sep 29 13:31:40 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 319, in resolve
+[Sun Sep 29 13:31:40 2013] [error]     for pattern in self.url_patterns:
+[Sun Sep 29 13:31:40 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 347, in url_patterns
+[Sun Sep 29 13:31:40 2013] [error]     patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+[Sun Sep 29 13:31:40 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 342, in urlconf_module
+[Sun Sep 29 13:31:40 2013] [error]     self._urlconf_module = import_module(self.urlconf_name)
+[Sun Sep 29 13:31:40 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/utils/importlib.py", line 35, in import_module
+[Sun Sep 29 13:31:40 2013] [error]     __import__(name)
+[Sun Sep 29 13:31:40 2013] [error]   File "/home/sandbox/django-projects/erp/erp/urls.py", line 39, in <module>
+[Sun Sep 29 13:31:40 2013] [error]     views.selectorder, name='selectorder'),
+[Sun Sep 29 13:31:40 2013] [error] AttributeError: 'module' object has no attribute 'selectorder'
+[Sun Sep 29 13:34:52 2013] [error] Internal Server Error: /
+[Sun Sep 29 13:34:52 2013] [error] Traceback (most recent call last):
+[Sun Sep 29 13:34:52 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 103, in get_response
+[Sun Sep 29 13:34:52 2013] [error]     resolver_match = resolver.resolve(request.path_info)
+[Sun Sep 29 13:34:52 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 319, in resolve
+[Sun Sep 29 13:34:52 2013] [error]     for pattern in self.url_patterns:
+[Sun Sep 29 13:34:52 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 347, in url_patterns
+[Sun Sep 29 13:34:52 2013] [error]     patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+[Sun Sep 29 13:34:52 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 342, in urlconf_module
+[Sun Sep 29 13:34:52 2013] [error]     self._urlconf_module = import_module(self.urlconf_name)
+[Sun Sep 29 13:34:52 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/utils/importlib.py", line 35, in import_module
+[Sun Sep 29 13:34:52 2013] [error]     __import__(name)
+[Sun Sep 29 13:34:52 2013] [error]   File "/home/sandbox/django-projects/erp/erp/urls.py", line 39, in <module>
+[Sun Sep 29 13:34:52 2013] [error]     views.selectorder, name='selectorder'),
+[Sun Sep 29 13:34:52 2013] [error] AttributeError: 'module' object has no attribute 'selectorder'
+[Sun Sep 29 13:36:00 2013] [error] Internal Server Error: /
+[Sun Sep 29 13:36:00 2013] [error] Traceback (most recent call last):
+[Sun Sep 29 13:36:00 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 103, in get_response
+[Sun Sep 29 13:36:00 2013] [error]     resolver_match = resolver.resolve(request.path_info)
+[Sun Sep 29 13:36:00 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 319, in resolve
+[Sun Sep 29 13:36:00 2013] [error]     for pattern in self.url_patterns:
+[Sun Sep 29 13:36:00 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 347, in url_patterns
+[Sun Sep 29 13:36:00 2013] [error]     patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+[Sun Sep 29 13:36:00 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 342, in urlconf_module
+[Sun Sep 29 13:36:00 2013] [error]     self._urlconf_module = import_module(self.urlconf_name)
+[Sun Sep 29 13:36:00 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/utils/importlib.py", line 35, in import_module
+[Sun Sep 29 13:36:00 2013] [error]     __import__(name)
+[Sun Sep 29 13:36:00 2013] [error]   File "/home/sandbox/django-projects/erp/erp/urls.py", line 39, in <module>
+[Sun Sep 29 13:36:00 2013] [error]     views.selectproduct, name='selectproduct'),
+[Sun Sep 29 13:36:00 2013] [error] AttributeError: 'module' object has no attribute 'selectproduct'
+[Sun Sep 29 14:36:11 2013] [error] Internal Server Error: /selectproduct/1/
+[Sun Sep 29 14:36:11 2013] [error] Traceback (most recent call last):
+[Sun Sep 29 14:36:11 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 115, in get_response
+[Sun Sep 29 14:36:11 2013] [error]     response = callback(request, *callback_args, **callback_kwargs)
+[Sun Sep 29 14:36:11 2013] [error]   File "/home/sandbox/django-projects/erp/frontend/views.py", line 160, in selectproduct
+[Sun Sep 29 14:36:11 2013] [error]     "r_lifo": r_lifo, "r_fifo": r_fifo, "productionplan": productionplan, "r_average": average},
+[Sun Sep 29 14:36:11 2013] [error] NameError: global name 'average' is not defined
+[Sun Sep 29 14:36:14 2013] [error] Internal Server Error: /selectproduct/1/
+[Sun Sep 29 14:36:14 2013] [error] Traceback (most recent call last):
+[Sun Sep 29 14:36:14 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 115, in get_response
+[Sun Sep 29 14:36:14 2013] [error]     response = callback(request, *callback_args, **callback_kwargs)
+[Sun Sep 29 14:36:14 2013] [error]   File "/home/sandbox/django-projects/erp/frontend/views.py", line 160, in selectproduct
+[Sun Sep 29 14:36:14 2013] [error]     "r_lifo": r_lifo, "r_fifo": r_fifo, "productionplan": productionplan, "r_average": average},
+[Sun Sep 29 14:36:14 2013] [error] NameError: global name 'average' is not defined
+[Sun Sep 29 14:43:45 2013] [error] Internal Server Error: /selectproduct/1/
+[Sun Sep 29 14:43:45 2013] [error] Traceback (most recent call last):
+[Sun Sep 29 14:43:45 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 115, in get_response
+[Sun Sep 29 14:43:45 2013] [error]     response = callback(request, *callback_args, **callback_kwargs)
+[Sun Sep 29 14:43:45 2013] [error]   File "/home/sandbox/django-projects/erp/frontend/views.py", line 160, in selectproduct
+[Sun Sep 29 14:43:45 2013] [error]     "r_lifo": r_lifo, "r_fifo": r_fifo, "productionplan": productionplan, "r_average": r_average},
+[Sun Sep 29 14:43:45 2013] [error] NameError: global name 'average' is not defined
+[Sun Sep 29 21:42:27 2013] [error] Internal Server Error: /admin/
+[Sun Sep 29 21:42:27 2013] [error] Traceback (most recent call last):
+[Sun Sep 29 21:42:27 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 115, in get_response
+[Sun Sep 29 21:42:27 2013] [error]     response = callback(request, *callback_args, **callback_kwargs)
+[Sun Sep 29 21:42:27 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/sites.py", line 219, in wrapper
+[Sun Sep 29 21:42:27 2013] [error]     return self.admin_view(view, cacheable)(*args, **kwargs)
+[Sun Sep 29 21:42:27 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 91, in _wrapped_view
+[Sun Sep 29 21:42:27 2013] [error]     response = view_func(request, *args, **kwargs)
+[Sun Sep 29 21:42:27 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+[Sun Sep 29 21:42:27 2013] [error]     response = view_func(request, *args, **kwargs)
+[Sun Sep 29 21:42:27 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/sites.py", line 201, in inner
+[Sun Sep 29 21:42:27 2013] [error]     return self.login(request)
+[Sun Sep 29 21:42:27 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+[Sun Sep 29 21:42:27 2013] [error]     response = view_func(request, *args, **kwargs)
+[Sun Sep 29 21:42:27 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/sites.py", line 334, in login
+[Sun Sep 29 21:42:27 2013] [error]     return login(request, **defaults)
+[Sun Sep 29 21:42:27 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/debug.py", line 69, in sensitive_post_parameters_wrapper
+[Sun Sep 29 21:42:27 2013] [error]     return view(request, *args, **kwargs)
+[Sun Sep 29 21:42:27 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 91, in _wrapped_view
+[Sun Sep 29 21:42:27 2013] [error]     response = view_func(request, *args, **kwargs)
+[Sun Sep 29 21:42:27 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+[Sun Sep 29 21:42:27 2013] [error]     response = view_func(request, *args, **kwargs)
+[Sun Sep 29 21:42:27 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/views.py", line 57, in login
+[Sun Sep 29 21:42:27 2013] [error]     current_site = get_current_site(request)
+[Sun Sep 29 21:42:27 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/sites/models.py", line 95, in get_current_site
+[Sun Sep 29 21:42:27 2013] [error]     current_site = Site.objects.get_current()
+[Sun Sep 29 21:42:27 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/sites/models.py", line 26, in get_current
+[Sun Sep 29 21:42:27 2013] [error]     current_site = self.get(pk=sid)
+[Sun Sep 29 21:42:27 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/db/models/manager.py", line 143, in get
+[Sun Sep 29 21:42:27 2013] [error]     return self.get_query_set().get(*args, **kwargs)
+[Sun Sep 29 21:42:27 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 404, in get
+[Sun Sep 29 21:42:27 2013] [error]     self.model._meta.object_name)
+[Sun Sep 29 21:42:27 2013] [error] DoesNotExist: Site matching query does not exist.
+[Sun Sep 29 21:43:40 2013] [error] Internal Server Error: /admin/
+[Sun Sep 29 21:43:40 2013] [error] Traceback (most recent call last):
+[Sun Sep 29 21:43:40 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 115, in get_response
+[Sun Sep 29 21:43:40 2013] [error]     response = callback(request, *callback_args, **callback_kwargs)
+[Sun Sep 29 21:43:40 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/sites.py", line 219, in wrapper
+[Sun Sep 29 21:43:40 2013] [error]     return self.admin_view(view, cacheable)(*args, **kwargs)
+[Sun Sep 29 21:43:40 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 91, in _wrapped_view
+[Sun Sep 29 21:43:40 2013] [error]     response = view_func(request, *args, **kwargs)
+[Sun Sep 29 21:43:40 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+[Sun Sep 29 21:43:40 2013] [error]     response = view_func(request, *args, **kwargs)
+[Sun Sep 29 21:43:40 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/sites.py", line 201, in inner
+[Sun Sep 29 21:43:40 2013] [error]     return self.login(request)
+[Sun Sep 29 21:43:40 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+[Sun Sep 29 21:43:40 2013] [error]     response = view_func(request, *args, **kwargs)
+[Sun Sep 29 21:43:40 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/sites.py", line 334, in login
+[Sun Sep 29 21:43:40 2013] [error]     return login(request, **defaults)
+[Sun Sep 29 21:43:40 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/debug.py", line 69, in sensitive_post_parameters_wrapper
+[Sun Sep 29 21:43:40 2013] [error]     return view(request, *args, **kwargs)
+[Sun Sep 29 21:43:40 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 91, in _wrapped_view
+[Sun Sep 29 21:43:40 2013] [error]     response = view_func(request, *args, **kwargs)
+[Sun Sep 29 21:43:40 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+[Sun Sep 29 21:43:40 2013] [error]     response = view_func(request, *args, **kwargs)
+[Sun Sep 29 21:43:40 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/views.py", line 57, in login
+[Sun Sep 29 21:43:40 2013] [error]     current_site = get_current_site(request)
+[Sun Sep 29 21:43:40 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/sites/models.py", line 95, in get_current_site
+[Sun Sep 29 21:43:40 2013] [error]     current_site = Site.objects.get_current()
+[Sun Sep 29 21:43:40 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/sites/models.py", line 26, in get_current
+[Sun Sep 29 21:43:40 2013] [error]     current_site = self.get(pk=sid)
+[Sun Sep 29 21:43:40 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/db/models/manager.py", line 143, in get
+[Sun Sep 29 21:43:40 2013] [error]     return self.get_query_set().get(*args, **kwargs)
+[Sun Sep 29 21:43:40 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 404, in get
+[Sun Sep 29 21:43:40 2013] [error]     self.model._meta.object_name)
+[Sun Sep 29 21:43:40 2013] [error] DoesNotExist: Site matching query does not exist.
+[Sun Sep 29 21:44:59 2013] [error] Internal Server Error: /admin/
+[Sun Sep 29 21:44:59 2013] [error] Traceback (most recent call last):
+[Sun Sep 29 21:44:59 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 115, in get_response
+[Sun Sep 29 21:44:59 2013] [error]     response = callback(request, *callback_args, **callback_kwargs)
+[Sun Sep 29 21:44:59 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/sites.py", line 219, in wrapper
+[Sun Sep 29 21:44:59 2013] [error]     return self.admin_view(view, cacheable)(*args, **kwargs)
+[Sun Sep 29 21:44:59 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 91, in _wrapped_view
+[Sun Sep 29 21:44:59 2013] [error]     response = view_func(request, *args, **kwargs)
+[Sun Sep 29 21:44:59 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+[Sun Sep 29 21:44:59 2013] [error]     response = view_func(request, *args, **kwargs)
+[Sun Sep 29 21:44:59 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/sites.py", line 201, in inner
+[Sun Sep 29 21:44:59 2013] [error]     return self.login(request)
+[Sun Sep 29 21:44:59 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+[Sun Sep 29 21:44:59 2013] [error]     response = view_func(request, *args, **kwargs)
+[Sun Sep 29 21:44:59 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/sites.py", line 334, in login
+[Sun Sep 29 21:44:59 2013] [error]     return login(request, **defaults)
+[Sun Sep 29 21:44:59 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/debug.py", line 69, in sensitive_post_parameters_wrapper
+[Sun Sep 29 21:44:59 2013] [error]     return view(request, *args, **kwargs)
+[Sun Sep 29 21:44:59 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 91, in _wrapped_view
+[Sun Sep 29 21:44:59 2013] [error]     response = view_func(request, *args, **kwargs)
+[Sun Sep 29 21:44:59 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+[Sun Sep 29 21:44:59 2013] [error]     response = view_func(request, *args, **kwargs)
+[Sun Sep 29 21:44:59 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/views.py", line 57, in login
+[Sun Sep 29 21:44:59 2013] [error]     current_site = get_current_site(request)
+[Sun Sep 29 21:44:59 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/sites/models.py", line 95, in get_current_site
+[Sun Sep 29 21:44:59 2013] [error]     current_site = Site.objects.get_current()
+[Sun Sep 29 21:44:59 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/sites/models.py", line 26, in get_current
+[Sun Sep 29 21:44:59 2013] [error]     current_site = self.get(pk=sid)
+[Sun Sep 29 21:44:59 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/db/models/manager.py", line 143, in get
+[Sun Sep 29 21:44:59 2013] [error]     return self.get_query_set().get(*args, **kwargs)
+[Sun Sep 29 21:44:59 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 404, in get
+[Sun Sep 29 21:44:59 2013] [error]     self.model._meta.object_name)
+[Sun Sep 29 21:44:59 2013] [error] DoesNotExist: Site matching query does not exist.
+[Sun Sep 29 21:47:07 2013] [error] Internal Server Error: /admin/
+[Sun Sep 29 21:47:07 2013] [error] Traceback (most recent call last):
+[Sun Sep 29 21:47:07 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 115, in get_response
+[Sun Sep 29 21:47:07 2013] [error]     response = callback(request, *callback_args, **callback_kwargs)
+[Sun Sep 29 21:47:07 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/sites.py", line 219, in wrapper
+[Sun Sep 29 21:47:07 2013] [error]     return self.admin_view(view, cacheable)(*args, **kwargs)
+[Sun Sep 29 21:47:07 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 91, in _wrapped_view
+[Sun Sep 29 21:47:07 2013] [error]     response = view_func(request, *args, **kwargs)
+[Sun Sep 29 21:47:07 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+[Sun Sep 29 21:47:07 2013] [error]     response = view_func(request, *args, **kwargs)
+[Sun Sep 29 21:47:07 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/sites.py", line 201, in inner
+[Sun Sep 29 21:47:07 2013] [error]     return self.login(request)
+[Sun Sep 29 21:47:07 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+[Sun Sep 29 21:47:07 2013] [error]     response = view_func(request, *args, **kwargs)
+[Sun Sep 29 21:47:07 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/sites.py", line 334, in login
+[Sun Sep 29 21:47:07 2013] [error]     return login(request, **defaults)
+[Sun Sep 29 21:47:07 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/debug.py", line 69, in sensitive_post_parameters_wrapper
+[Sun Sep 29 21:47:07 2013] [error]     return view(request, *args, **kwargs)
+[Sun Sep 29 21:47:07 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 91, in _wrapped_view
+[Sun Sep 29 21:47:07 2013] [error]     response = view_func(request, *args, **kwargs)
+[Sun Sep 29 21:47:07 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+[Sun Sep 29 21:47:07 2013] [error]     response = view_func(request, *args, **kwargs)
+[Sun Sep 29 21:47:07 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/views.py", line 57, in login
+[Sun Sep 29 21:47:07 2013] [error]     current_site = get_current_site(request)
+[Sun Sep 29 21:47:07 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/sites/models.py", line 95, in get_current_site
+[Sun Sep 29 21:47:07 2013] [error]     current_site = Site.objects.get_current()
+[Sun Sep 29 21:47:07 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/sites/models.py", line 26, in get_current
+[Sun Sep 29 21:47:07 2013] [error]     current_site = self.get(pk=sid)
+[Sun Sep 29 21:47:07 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/db/models/manager.py", line 143, in get
+[Sun Sep 29 21:47:07 2013] [error]     return self.get_query_set().get(*args, **kwargs)
+[Sun Sep 29 21:47:07 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 404, in get
+[Sun Sep 29 21:47:07 2013] [error]     self.model._meta.object_name)
+[Sun Sep 29 21:47:07 2013] [error] DoesNotExist: Site matching query does not exist.
+[Sun Sep 29 21:47:50 2013] [error] Internal Server Error: /admin/
+[Sun Sep 29 21:47:50 2013] [error] Traceback (most recent call last):
+[Sun Sep 29 21:47:50 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 115, in get_response
+[Sun Sep 29 21:47:50 2013] [error]     response = callback(request, *callback_args, **callback_kwargs)
+[Sun Sep 29 21:47:50 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/sites.py", line 219, in wrapper
+[Sun Sep 29 21:47:50 2013] [error]     return self.admin_view(view, cacheable)(*args, **kwargs)
+[Sun Sep 29 21:47:50 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 91, in _wrapped_view
+[Sun Sep 29 21:47:50 2013] [error]     response = view_func(request, *args, **kwargs)
+[Sun Sep 29 21:47:50 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+[Sun Sep 29 21:47:50 2013] [error]     response = view_func(request, *args, **kwargs)
+[Sun Sep 29 21:47:50 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/sites.py", line 201, in inner
+[Sun Sep 29 21:47:50 2013] [error]     return self.login(request)
+[Sun Sep 29 21:47:50 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+[Sun Sep 29 21:47:50 2013] [error]     response = view_func(request, *args, **kwargs)
+[Sun Sep 29 21:47:50 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/sites.py", line 334, in login
+[Sun Sep 29 21:47:50 2013] [error]     return login(request, **defaults)
+[Sun Sep 29 21:47:50 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/debug.py", line 69, in sensitive_post_parameters_wrapper
+[Sun Sep 29 21:47:50 2013] [error]     return view(request, *args, **kwargs)
+[Sun Sep 29 21:47:50 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 91, in _wrapped_view
+[Sun Sep 29 21:47:50 2013] [error]     response = view_func(request, *args, **kwargs)
+[Sun Sep 29 21:47:50 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+[Sun Sep 29 21:47:50 2013] [error]     response = view_func(request, *args, **kwargs)
+[Sun Sep 29 21:47:50 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/views.py", line 57, in login
+[Sun Sep 29 21:47:50 2013] [error]     current_site = get_current_site(request)
+[Sun Sep 29 21:47:50 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/sites/models.py", line 95, in get_current_site
+[Sun Sep 29 21:47:50 2013] [error]     current_site = Site.objects.get_current()
+[Sun Sep 29 21:47:50 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/sites/models.py", line 26, in get_current
+[Sun Sep 29 21:47:50 2013] [error]     current_site = self.get(pk=sid)
+[Sun Sep 29 21:47:50 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/db/models/manager.py", line 143, in get
+[Sun Sep 29 21:47:50 2013] [error]     return self.get_query_set().get(*args, **kwargs)
+[Sun Sep 29 21:47:50 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 404, in get
+[Sun Sep 29 21:47:50 2013] [error]     self.model._meta.object_name)
+[Sun Sep 29 21:47:50 2013] [error] DoesNotExist: Site matching query does not exist.
+[Sun Sep 29 21:48:03 2013] [error] Internal Server Error: /admin/
+[Sun Sep 29 21:48:03 2013] [error] Traceback (most recent call last):
+[Sun Sep 29 21:48:03 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 115, in get_response
+[Sun Sep 29 21:48:03 2013] [error]     response = callback(request, *callback_args, **callback_kwargs)
+[Sun Sep 29 21:48:03 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/sites.py", line 219, in wrapper
+[Sun Sep 29 21:48:03 2013] [error]     return self.admin_view(view, cacheable)(*args, **kwargs)
+[Sun Sep 29 21:48:03 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 91, in _wrapped_view
+[Sun Sep 29 21:48:03 2013] [error]     response = view_func(request, *args, **kwargs)
+[Sun Sep 29 21:48:03 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+[Sun Sep 29 21:48:03 2013] [error]     response = view_func(request, *args, **kwargs)
+[Sun Sep 29 21:48:03 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/sites.py", line 201, in inner
+[Sun Sep 29 21:48:03 2013] [error]     return self.login(request)
+[Sun Sep 29 21:48:03 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+[Sun Sep 29 21:48:03 2013] [error]     response = view_func(request, *args, **kwargs)
+[Sun Sep 29 21:48:03 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/sites.py", line 334, in login
+[Sun Sep 29 21:48:03 2013] [error]     return login(request, **defaults)
+[Sun Sep 29 21:48:03 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/debug.py", line 69, in sensitive_post_parameters_wrapper
+[Sun Sep 29 21:48:03 2013] [error]     return view(request, *args, **kwargs)
+[Sun Sep 29 21:48:03 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 91, in _wrapped_view
+[Sun Sep 29 21:48:03 2013] [error]     response = view_func(request, *args, **kwargs)
+[Sun Sep 29 21:48:03 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+[Sun Sep 29 21:48:03 2013] [error]     response = view_func(request, *args, **kwargs)
+[Sun Sep 29 21:48:03 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/views.py", line 57, in login
+[Sun Sep 29 21:48:03 2013] [error]     current_site = get_current_site(request)
+[Sun Sep 29 21:48:03 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/sites/models.py", line 95, in get_current_site
+[Sun Sep 29 21:48:03 2013] [error]     current_site = Site.objects.get_current()
+[Sun Sep 29 21:48:03 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/sites/models.py", line 26, in get_current
+[Sun Sep 29 21:48:03 2013] [error]     current_site = self.get(pk=sid)
+[Sun Sep 29 21:48:03 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/db/models/manager.py", line 143, in get
+[Sun Sep 29 21:48:03 2013] [error]     return self.get_query_set().get(*args, **kwargs)
+[Sun Sep 29 21:48:03 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 404, in get
+[Sun Sep 29 21:48:03 2013] [error]     self.model._meta.object_name)
+[Sun Sep 29 21:48:03 2013] [error] DoesNotExist: Site matching query does not exist.
+[Sun Sep 29 21:51:13 2013] [error] Internal Server Error: /admin/
+[Sun Sep 29 21:51:13 2013] [error] Traceback (most recent call last):
+[Sun Sep 29 21:51:13 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 115, in get_response
+[Sun Sep 29 21:51:13 2013] [error]     response = callback(request, *callback_args, **callback_kwargs)
+[Sun Sep 29 21:51:13 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/sites.py", line 219, in wrapper
+[Sun Sep 29 21:51:13 2013] [error]     return self.admin_view(view, cacheable)(*args, **kwargs)
+[Sun Sep 29 21:51:13 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 91, in _wrapped_view
+[Sun Sep 29 21:51:13 2013] [error]     response = view_func(request, *args, **kwargs)
+[Sun Sep 29 21:51:13 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+[Sun Sep 29 21:51:13 2013] [error]     response = view_func(request, *args, **kwargs)
+[Sun Sep 29 21:51:13 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/sites.py", line 201, in inner
+[Sun Sep 29 21:51:13 2013] [error]     return self.login(request)
+[Sun Sep 29 21:51:13 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+[Sun Sep 29 21:51:13 2013] [error]     response = view_func(request, *args, **kwargs)
+[Sun Sep 29 21:51:13 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/sites.py", line 334, in login
+[Sun Sep 29 21:51:13 2013] [error]     return login(request, **defaults)
+[Sun Sep 29 21:51:13 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/debug.py", line 69, in sensitive_post_parameters_wrapper
+[Sun Sep 29 21:51:13 2013] [error]     return view(request, *args, **kwargs)
+[Sun Sep 29 21:51:13 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 91, in _wrapped_view
+[Sun Sep 29 21:51:13 2013] [error]     response = view_func(request, *args, **kwargs)
+[Sun Sep 29 21:51:13 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+[Sun Sep 29 21:51:13 2013] [error]     response = view_func(request, *args, **kwargs)
+[Sun Sep 29 21:51:13 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/views.py", line 57, in login
+[Sun Sep 29 21:51:13 2013] [error]     current_site = get_current_site(request)
+[Sun Sep 29 21:51:13 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/sites/models.py", line 95, in get_current_site
+[Sun Sep 29 21:51:13 2013] [error]     current_site = Site.objects.get_current()
+[Sun Sep 29 21:51:13 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/sites/models.py", line 26, in get_current
+[Sun Sep 29 21:51:13 2013] [error]     current_site = self.get(pk=sid)
+[Sun Sep 29 21:51:13 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/db/models/manager.py", line 143, in get
+[Sun Sep 29 21:51:13 2013] [error]     return self.get_query_set().get(*args, **kwargs)
+[Sun Sep 29 21:51:13 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 404, in get
+[Sun Sep 29 21:51:13 2013] [error]     self.model._meta.object_name)
+[Sun Sep 29 21:51:13 2013] [error] DoesNotExist: Site matching query does not exist.
+[Sun Sep 29 21:52:07 2013] [error] Internal Server Error: /admin/
+[Sun Sep 29 21:52:07 2013] [error] Traceback (most recent call last):
+[Sun Sep 29 21:52:07 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 115, in get_response
+[Sun Sep 29 21:52:07 2013] [error]     response = callback(request, *callback_args, **callback_kwargs)
+[Sun Sep 29 21:52:07 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/sites.py", line 219, in wrapper
+[Sun Sep 29 21:52:07 2013] [error]     return self.admin_view(view, cacheable)(*args, **kwargs)
+[Sun Sep 29 21:52:07 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 91, in _wrapped_view
+[Sun Sep 29 21:52:07 2013] [error]     response = view_func(request, *args, **kwargs)
+[Sun Sep 29 21:52:07 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+[Sun Sep 29 21:52:07 2013] [error]     response = view_func(request, *args, **kwargs)
+[Sun Sep 29 21:52:07 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/sites.py", line 201, in inner
+[Sun Sep 29 21:52:07 2013] [error]     return self.login(request)
+[Sun Sep 29 21:52:07 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+[Sun Sep 29 21:52:07 2013] [error]     response = view_func(request, *args, **kwargs)
+[Sun Sep 29 21:52:07 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/sites.py", line 334, in login
+[Sun Sep 29 21:52:07 2013] [error]     return login(request, **defaults)
+[Sun Sep 29 21:52:07 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/debug.py", line 69, in sensitive_post_parameters_wrapper
+[Sun Sep 29 21:52:07 2013] [error]     return view(request, *args, **kwargs)
+[Sun Sep 29 21:52:07 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 91, in _wrapped_view
+[Sun Sep 29 21:52:07 2013] [error]     response = view_func(request, *args, **kwargs)
+[Sun Sep 29 21:52:07 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+[Sun Sep 29 21:52:07 2013] [error]     response = view_func(request, *args, **kwargs)
+[Sun Sep 29 21:52:07 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/views.py", line 57, in login
+[Sun Sep 29 21:52:07 2013] [error]     current_site = get_current_site(request)
+[Sun Sep 29 21:52:07 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/sites/models.py", line 95, in get_current_site
+[Sun Sep 29 21:52:07 2013] [error]     current_site = Site.objects.get_current()
+[Sun Sep 29 21:52:07 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/contrib/sites/models.py", line 26, in get_current
+[Sun Sep 29 21:52:07 2013] [error]     current_site = self.get(pk=sid)
+[Sun Sep 29 21:52:07 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/db/models/manager.py", line 143, in get
+[Sun Sep 29 21:52:07 2013] [error]     return self.get_query_set().get(*args, **kwargs)
+[Sun Sep 29 21:52:07 2013] [error]   File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 404, in get
+[Sun Sep 29 21:52:07 2013] [error]     self.model._meta.object_name)
+[Sun Sep 29 21:52:07 2013] [error] DoesNotExist: Site matching query does not exist.
