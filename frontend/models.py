@@ -1,10 +1,16 @@
 # encoding: utf-8
 
-# Create your models here.
+# Импортируем модули для работы с моделями и формами
 
 from django.db import models
 from django.forms import ModelForm, extras
 from django import forms
+
+# Описание классов (объектов) наших моделей
+# Модели интерпретируются в таблицы БД
+# В дальнейшем из этих моделей наследуются формы, которые являются представлениями данных из БД
+# Класс Meta содержит название модлеи и дополнительные параметры
+# Функция __unicode__ возвращает только определённый набор полей модели
 
 
 class CodeBOM(models.Model):
@@ -16,7 +22,7 @@ class CodeBOM(models.Model):
     class Meta:
         verbose_name = 'Код BOM'
         verbose_name_plural = 'Коды BOM'
-        ordering = ['code']
+        ordering = ['code']  # сортировка по коду
 
     def __unicode__(self):
         return u'%s %s' % (self.code, self.name)
@@ -33,7 +39,7 @@ class Supplier(models.Model):
     class Meta:
         verbose_name = 'Сведения о поставщике'
         verbose_name_plural = 'Сведения о поставщиках'
-        ordering = ['supplier_name']
+        ordering = ['supplier_name']  # сортировка по имени поставщика
 
     def __unicode__(self):
         return u'%s' % (self.supplier_name)
@@ -49,7 +55,7 @@ class SupplierProduct(models.Model):
     class Meta:
         verbose_name = 'Поставщик и продукция'
         verbose_name_plural = 'Поставщики и продукция'
-        ordering = ['code']
+        ordering = ['code']  # сортировка по коду
 
     def __unicode__(self):
         return u'%s %s %s' % (self.code, self.product_name, self.supplier_name)
@@ -66,7 +72,7 @@ class Remains(models.Model):
     class Meta:
         verbose_name = 'Сведения об остатках'
         verbose_name_plural = 'Сведения об остатках'
-        ordering = ['code']
+        ordering = ['code']  # сортировка по коду
 
     def __unicode__(self):
         return u'%s %s %s %s %s' % (self.code, self.name, self.amount, self.cost, self.date)
@@ -90,7 +96,7 @@ class Complectation(models.Model):
     class Meta:
         verbose_name = 'Комплектация'
         verbose_name_plural = 'Комплектации'
-        ordering = ['code']
+        ordering = ['code']  # сортировка по коду
 
     def __unicode__(self):
         return u'%s %s ' % (self.code, self.name)
@@ -110,7 +116,7 @@ class ProductionPlan(models.Model):
     class Meta:
         verbose_name = 'Производственный план'
         verbose_name_plural = 'Производственные планы'
-        ordering = ['code']
+        ordering = ['code']  # сортировка по коду
 
     def __unicode__(self):
         return u'%s' % (self.code)
@@ -131,7 +137,7 @@ class Order(models.Model):
     class Meta:
         verbose_name = 'Заказ'
         verbose_name_plural = 'Заказы'
-        ordering = ['code']
+        ordering = ['code']  # сортировка по коду
 
     def __unicode__(self):
         return u'%s' % (self.code)
@@ -145,7 +151,7 @@ class ProcurementPlan(models.Model):
     class Meta:
         verbose_name = 'План закупок'
         verbose_name_plural = 'Планы закупок'
-        ordering = ['code']
+        ordering = ['code']  # сортировка по коду
 
     def __unicode__(self):
         return u'%s %s %s' % (self.code, self.amount, self.date)
@@ -162,10 +168,12 @@ class Plan(models.Model):
     class Meta:
         verbose_name = 'План'
         verbose_name_plural = 'Планы'
-        ordering = ['code']
+        ordering = ['code']  # сортировка по коду
 
     def __unicode__(self):
         return u'%s %s %s %s' % (self.code, self.complectation, self.amount, self.date)
+
+# Описание форм
 
 
 class CodeBOMForm(ModelForm):

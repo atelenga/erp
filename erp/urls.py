@@ -1,15 +1,12 @@
 from django.conf.urls import patterns, include, url
 
-# Uncomment the next two lines to enable the admin:
+# Подключение административного интерфейса
 from django.contrib import admin
 admin.autodiscover()
-
+# Импорт представлений из файла views.py
 from frontend import views
-
+# Описание шаблонов url и их обработчиков
 urlpatterns = patterns('',
-                       # Examples:
-                       # url(r'^$', 'erp.views.home', name='home'),
-                       # url(r'^frontend/', include('frontend.urls')),
                        url(r'^$', views.index, name='index'),
                        url(r'^codebom/', views.codebom, name='codebom'),
                        url(r'^remains/', views.remains, name='remains'),
@@ -34,13 +31,8 @@ urlpatterns = patterns('',
                        url(r'^productionplanlist/',
                            views.productionplanlist, name='productionplanlist'),
                        url(r'^orderslist/',
-                           views.orderslist, name='orderslist'),                       
+                           views.orderslist, name='orderslist'),
                        url(r'^selectproduct/(?P<rec_id>\d+)/$',
                            views.selectproduct, name='selectproduct'),
-
-                       # Uncomment the admin/doc line below to enable admin documentation:
-                       # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
-
-                       # Uncomment the next line to enable the admin:
                        url(r'^admin/', include(admin.site.urls)),
                        )

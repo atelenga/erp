@@ -1,6 +1,6 @@
 # encoding: utf-8
 
-# Create your views here.
+# Импорт модулей для работы с html-документами, моделей из models.py
 
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render_to_response, redirect, get_object_or_404, render
@@ -8,6 +8,8 @@ from frontend.models import *
 from django.forms.models import modelformset_factory
 from django.core.context_processors import csrf
 from django.template import RequestContext
+
+# Функции отображения страниц и их представлений
 
 
 def index(request):
@@ -131,6 +133,8 @@ def orderslist(request):
     return render_to_response("orderslist.html", {"orders": orders},
                               context_instance=RequestContext(request))
 
+# Расчёт экономических показателей
+
 
 def selectproduct(request, rec_id):
     try:
@@ -173,7 +177,7 @@ def selectproduct(request, rec_id):
         o_average = (order_avg.cost * order_avg.amount) / i
 
     if (o_lifo == 0) and (o_fifo == 0) and (o_average == 0):
-    	o_fifo = o_lifo = o_average = "Нет заказов деталей для выбранного плана производства"
+        o_fifo = o_lifo = o_average = "Нет заказов деталей для выбранного плана производства"
 
     return render_to_response(
         "resultproduct.html", {
