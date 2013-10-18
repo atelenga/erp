@@ -141,12 +141,12 @@ def selectproduct(request, rec_id):
         res_id = int(rec_id)
     except ValueError:
         raise Http404()
-
+    # Получение кода производственного плана
     productionplan = ProductionPlan.objects.get(code=rec_id)
     remains_lifo = Remains.objects.filter(date__lte=productionplan.end_date)
     remains_fifo = Remains.objects.filter(date__gte=productionplan.start_date)
     remains_avg = Remains.objects.all()
-
+    # Расчёт lifo, fifo, среднего
     r_lifo = r_fifo = r_average = 0
     for remain_lifo in remains_lifo:
         r_lifo += remain_lifo.cost * remain_lifo.amount
@@ -158,12 +158,12 @@ def selectproduct(request, rec_id):
     for remain_avg in remains_avg:
         i += 1
         r_average = (remain_avg.cost * remain_avg.amount) / i
-
+    # Получение кода заказа
     orders_q = Order.objects.filter(code=rec_id)
     orders_lifo = orders_q.filter(date__lte=productionplan.end_date)
     orders_fifo = orders_q.filter(date__gte=productionplan.start_date)
     orders_avg = orders_q.all()
-
+    # Расчёт lifo, fifo, среднего
     o_lifo = o_fifo = o_average = 0
     for order_lifo in orders_lifo:
         o_lifo += order_lifo.cost * order_lifo.amount
@@ -175,7 +175,7 @@ def selectproduct(request, rec_id):
     for order_avg in orders_avg:
         i += 1
         o_average = (order_avg.cost * order_avg.amount) / i
-
+    # Проверка на существование заказов для выбранного производственного плана
     if (o_lifo == 0) and (o_fifo == 0) and (o_average == 0):
         o_fifo = o_lifo = o_average = "Нет заказов деталей для выбранного плана производства"
 
